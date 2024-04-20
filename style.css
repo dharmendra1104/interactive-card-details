@@ -52,6 +52,7 @@ body {
     outline: none;
 }
 
+
 .dates {
     display: flex;
     gap: 10px;
@@ -84,6 +85,7 @@ body {
     top: 120px;
     left:250px;
     bottom: 78px;
+    color: #fff;
 }
 
 .card-1{
@@ -118,9 +120,16 @@ body {
     outline: none;
     border: none;
     color: white;
+    
 }
 
-
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input::placeholder{
+    font-family: inherit;
+    color: white;
+}
 
 .card-2{
     position: relative;
@@ -131,4 +140,27 @@ body {
     background-image: url("images/bg-card-back.png");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
+
+.card-2 span{
+    margin-top: 10px;
+    margin-left: 270px;
+}
+
+.hide{
+      display: flex;
+    flex-direction: column;
+    gap: 13px;
+    display: ;
+}
+.ending{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
