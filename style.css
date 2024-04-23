@@ -68,18 +68,12 @@ body {
     cursor: pointer; 
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
 .cards{
     z-index: 100;
     display: flex;
     flex-direction: column;
     position: absolute;
-    gap: px;
+    gap: 15px;
     top: 120px;
     left:250px;
     bottom: 78px;
@@ -167,4 +161,69 @@ input::placeholder{
 .alert,.alert1,.alert2,.alert3{
     color: red;
     display: none;
+}
+
+@media only screen and (max-width:768px){
+    .section{
+        width: 100%;
+        flex-direction: column;
+        gap: 70px;
+        height: 100vh;
+    }
+    .left-content{
+        height: 35vh;
+        width:100%;
+    }
+    .cards{
+        gap: 0px;
+        margin-right: 40px;
+        flex-direction: column-reverse;
+    }
+    .card-1{
+        position: relative;
+        padding: 20px;
+        bottom: 280px;
+        right: 15rem;
+        height: 180px;
+        width: 330px;
+    }
+    .card-2{
+        z-index: -1;
+        right: 200px;
+        bottom: 385px;
+        position: absolute;
+        height: 180px;
+        width: 330px; 
+    } 
+    .card-2 span{
+        margin-bottom: 120px;
+    }
+    .right-content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .form {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-right: 0px;
+    }
+    .hide{
+      display: none;
+    }
+    .ending{
+        position: absolute;
+        margin-top: 200px;
+        left: 0px;
+        width: 100%;
+        gap: 15px;
+        text-align: center;
+        display: none;
+        line-height: 40px;
+    }
+    .ending button {
+        width: 80%;
+    };
 }

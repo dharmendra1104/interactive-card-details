@@ -34,8 +34,6 @@ InputHolder.addEventListener('keyup', () => {
 
 InputCardNumber.addEventListener('keyup', () => {
     // let input2=InputCardNumber.value
-    // console.log(input2)
-    // // console.log(typeof(input2)) 
     // CardNumber.textContent=input2;
     let input = InputCardNumber.value.replace(/\s/g, '');
     let formatted = input.replace(/(\d{4})/g, '$1 ').trim();
@@ -78,7 +76,6 @@ InpuCVC.addEventListener('keyup', () => {
 });
 
 
-// Button click event
 button.addEventListener("click", () => {
     if (checkInputs()) {
         Ending.style.display = "block";
