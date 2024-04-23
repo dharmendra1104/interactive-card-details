@@ -17,7 +17,6 @@ body {
     overflow: hidden;
     width: 100%;
     display: flex;
-    /* gap: 200px; */
     justify-content: space-between;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
     background-color: #fff; 
@@ -80,7 +79,6 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* right: 0; */
     gap: px;
     top: 120px;
     left:250px;
@@ -133,7 +131,6 @@ input::placeholder{
 
 .card-2{
     position: relative;
-    /* right: 70rem; */
     height: 200px;
     width: 400px;
     border-radius: 5px;
@@ -154,13 +151,20 @@ input::placeholder{
       display: flex;
     flex-direction: column;
     gap: 13px;
-    display: ;
+    display: none;
 }
 .ending{
+    position: absolute;
+    top: 200px;
+    left: 56.5pc;
+    width: 26%;
     gap: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    display: none;
+    line-height: 40px;
+}
+
+.alert,.alert1,.alert2,.alert3{
+    color: red;
     display: none;
 }
